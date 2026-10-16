@@ -12,12 +12,66 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
         body {
 
             font-family: "Google Sans", sans-serif;
             font-optical-sizing: auto;
+            margin: 0;
 
         }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            /* background: #c0bfbf; */
+            border-bottom: 1px solid #971d1d;
+
+        }
+
+        .content {
+            /* background: #9acd32; */
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+
+        .logo img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .content ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .content li {
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+
+        .content a {
+            text-decoration: none;
+            color: #000000;
+            padding: 12px 14px;
+        }
+
+        .content a:hover {
+            /* color:#1c0606b4; */
+            background: rgb(117, 115, 115);
+            text-decoration: underline;
+        }
+
+        /* git add . */
+        /*git commit -m "built the navbar" */
     </style>
 </head>
 
@@ -26,7 +80,7 @@
     <nav>
         <div class="content">
             <div class="logo">
-                <img src="images/racing-game_8037135.png" alt="">
+                <img src="images/racing-game_8037135.png" alt="Logo">
             </div>
             <ul>
                 <li><a href="#"></a>Home</li>
