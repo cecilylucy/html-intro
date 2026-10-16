@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title> Forms </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Edu+QLD+Hand:wght@400..700&family=Ms+Madi&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: aliceblue;
+            font-family: "Arimo", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        form {
+            width: 28%;
+            border: 1px solid #303089;
+            padding: 16px;
+            margin: auto;
+        }
+
+        label {
+            color: #8a2be2;
+        }
+
+        full-width {
+            width: 28%;
+            box-sizing: border-box;
+            padding: 16px;
+            margin: auto;
+        }
+
+        button {
+            width: 100%;
+            border-color: red;
+            padding: 16px;
+            color: blue;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--text, email, password, number, date, radio, checkbox, select, submit  -->
+    <form action="">
+        <label for="full_name">Names</label>
+        <input class="fw" type="text" required id="full_name" name="full_name" placeholder="Jane Doe">
+
+        <label for="email">Email</label>
+        <input class="full-width" type="email" required id="email" name="full_name" placeholder="joe@gmail.com">
+
+        <label for="password">Password</label>
+        <input class="full-width" type="password" required id="password" name="full_name" placeholder="***********">
+
+        <label for="weight">Weight</label>
+        <input class="full-width" type="number" required id="weight" name="full_name" placeholder="Jane Doe">
+
+        <input type="radio" id="f" name="gender">
+        <label for="f">female</label>
+
+        <input type="radio" id="m" name="gender">
+        <label for="f">Male</label>
+
+        <br>
+        <input type="checkbox" id="X" name="food">
+        <label for="X">pizza</label>
+
+        <br>
+
+        <input type="checkbox" id="X" name="food">
+        <label for="X">Burger</label>
+
+        <br>
+
+        <input type="checkbox" id="X" name="food">
+        <label for="y">Ugali</label>
+
+        <br>
+        <input type="checkbox" id="X" name="food">
+        <label for="z">yam</label>
+
+        <br>
+        <input type="checkbox" id="X" name="food">
+        <label for="g">SHwarma</label>
+        <br>
+
+        <select name="" id="">
+            <option value="1">Mombasa</option>
+            <option value="2">Muranga</option>
+            <option value="3">Nairobi</option>
+            <option value="4">Kiambu</option>
+            <option value="5">Kisii</option>
+        </select>
+
+        <br>
+        <!-- slider -->
+
+
+
+
+
+        <button>Sign In</button>
+
+        <hr>
+
+
+    </form>
+
+</body>
+
+</html>
