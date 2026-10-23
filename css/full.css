@@ -2,53 +2,117 @@
 
 /* font-family: "Roboto", sans-serif; */
 :root {
- --brand-green: #159957;
- --brand-dark: #1f2d3d;
- --soft-bg: #faf8f7;
+    --brand-green: #159957;
+    --brand-dark: #1f2d3d;
+    --soft-bg: #faf8f7;
 }
 
 body {
-    font-family: "Roboto", sans-serif;  
+    font-family: "Roboto", sans-serif;
     color: var(--brand-dark)
 }
-.navbar-brand{
+
+.navbar-brand {
     color: var(--brand-green);
     font-size: 1.4rem;
 }
-#goods{
+
+#goods {
     color: var(--brand-dark);
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover {
     color: #05f321;
 }
-.nav-link{
-    color:#536171 !important;
+
+.nav-link {
+    color: #536171 !important;
     font-weight: 500;
 }
-.nav-link.active{
+
+.nav-link.active {
     color: var(--brand-green)
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: var(--brand-green) !important;
 }
-.btn-success{
+
+.btn-success {
     background-color: var(--brand-green);
     border-color: var(--brand-green);
     border-radius: 3px;
     transition: all 1s;
 }
-.btn-success:hover{
+
+.btn-success:hover {
     background-color: #0e6138;
-    border-color:#0e6138;
+    border-color: #0e6138;
 }
 
-.hero{
+.hero {
     background: linear-gradient(to right, #afb3af, #edf3f1)
 }
-.hero .small-heading{
+
+.hero .small-heading {
     color: var(--brand-green);
     font-weight: 800;
     font-size: 0.85rem;
     letter-spacing: 2px;
+}
+
+.card {
+    border-color: #e5ece9;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 7px 9px 10px 7px rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: 7px 9px 10px 7px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 7px 9px 10px 7px rgba(0, 0, 0, 0.43);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.about-section {
+    background-color: var(--soft-bg)
+}
+
+.about-section i {
+    color: var(--brand-green);
+    font-size: 2.3rem;
+}
+
+footer {
+    background: #263342;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 12px;
+}
+
+footer a:hover {
+    color: var(--brand-green);
+}
+
+.copyright {
+    background-color: #192028;
+}
+
+@keyframes slide-left {
+    -webkit-animation: swirl-in-left-fwd 0.6s ease-out both;
+    animation: swirl-in-left-fwd 0.6s ease-out both;
 }
